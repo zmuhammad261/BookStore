@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>OldBookStore</title>
+  <meta name="description" content="Old Book Store- Platform where you can get old books at cheap prices" />
+  <meta name="keywords" content="learn, nooks, service, engineering, management, school, medical, fun, kids" />
+  <meta name="author" content="MZed" />
+  <link rel="shortcut icon" href="images/bmulogo.png">
+
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css">
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/bookblock.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo4.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+   <script src="js/modernizr.custom.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function(){
+      $(function(){
+      var shrinkHeader = 170;
+      $(window).scroll(function() {
+      var scroll = getCurrentScroll();
+        if ( scroll >= shrinkHeader) {
+          $('.navbar-fixed').css("display",'block');
+           $('.navbar-fixed nav').css("top",'0');
+             
+        }
+        else {
+           $('.navbar-fixed').css("top",'-1000px');
+           $('.navbar-fixed').css("display",'none');
+        }
+      });
+              function getCurrentScroll() {
+      return window.pageYOffset || document.documentElement.scrollTop;
+      }
+    });
+    });
+</script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+  <div class="navbar-fixed">
+    <nav class="blue-grey">
+      <div class="nav-wrapper">
+        <ul class="right hide-on-med-and-down">
+          <li><a href="sass.html">Sass</a></li>
+          <li><a href="badges.html">Components</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+<nav id="top-nav" class="blue-grey"
+    <div class="nav-wrapper">
+     <!-- <form>
+        <div class="input-field">
+          <input id="search" type="search" required>
+          <label for="search"><i class="material-icons">search</i></label>
+          <i class="material-icons">close</i>
+        </div>
+      </form> -->
+      <a href="#" class="brand-logo center">Logo</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="main-nav">
+    <nav class="blue-grey">
+      <div class="nav-wrapper">
+        <ul class="right hide-on-med-and-down">
+          <li><a href="sass.html">Sass</a></li>
+          <li><a href="badges.html">Components</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+
+<!-- <div class="no-js demo-4">     
+<div class="book-container">
+   <div class="bb-custom-wrapper">
+     
+     <div id="bb-bookblock" class="bb-bookblock">
+       <div class="bb-item">
+         <div class="bb-custom-firstpage">
+           <h1>BookBlock <span>A Content Flip Plugin</span></h1>
+         </div>
+         <div class="bb-custom-side">
+           <p>Pastry bear claw oat cake danish croissant jujubes danish. Wypas soufflé muffin. Liquorice powder pastry danish. Candy toffee gummi bears chocolate bar lollipop applicake chocolate cake danish brownie.</p>
+         </div>
+       </div>
+       <div class="bb-item">
+         <div class="bb-custom-side">
+           <p>Soufflé tootsie roll jelly beans. Sweet icing croissant dessert bear claw. Brownie dessert cheesecake danish jelly pudding bear claw soufflé.</p>
+         </div>
+         <div class="bb-custom-side">
+           <p>Candy canes lollipop macaroon marshmallow gummi bears tiramisu. Dessert croissant cupcake candy canes. Bear claw faworki faworki lemon drops. Faworki marzipan sugar plum jelly-o marzipan jelly-o.</p>
+         </div>
+       </div>
+       <div class="bb-item">
+         <div class="bb-custom-side">
+           <p>Croissant pudding gingerbread gummi bears marshmallow halvah. Wafer donut croissant. Cookie muffin jelly beans pie croissant croissant candy canes jelly marshmallow.</p>
+         </div>
+         <div class="bb-custom-side">
+           <p>Wafer donut caramels chocolate caramels sweet roll. Gummi bears powder candy chocolate cake gummi bears icing wafer cupcake. Brownie cotton candy pastry chocolate wypas.</p>
+         </div>
+       </div>
+       <div class="bb-item">
+         <div class="bb-custom-side">
+           <p>Marzipan dragée candy canes chocolate cake. Soufflé faworki jelly gingerbread cupcake. Powder gummies applicake.</p>
+         </div>
+         <div class="bb-custom-side">
+           <p>Cotton candy caramels tootsie roll soufflé powder lemon drops carrot cake danish. Cotton candy candy canes fruitcake muffin gingerbread. Jujubes soufflé gingerbread donut donut.</p>
+         </div>
+       </div>
+       <div class="bb-item">
+         <div class="bb-custom-side">
+           <p>Jujubes fruitcake tiramisu liquorice chocolate cake. Carrot cake faworki donut soufflé oat cake tootsie roll. Fruitcake fruitcake cake sweet pie jelly beans. Chocolate cake candy jujubes oat cake toffee croissant muffin.</p>
+         </div>
+         <div class="bb-custom-side">
+           <p>Chocolate bar tiramisu marzipan. Croissant soufflé croissant lollipop liquorice dragée chupa chups carrot cake. Liquorice lollipop halvah toffee lollipop.</p>
+         </div>
+       </div>
+     </div>
+
+     <nav class="book-nav">
+       <a id="bb-nav-first" href="#" class="bb-custom-icon bb-custom-icon-first">First page</a>
+       <a id="bb-nav-prev" href="#" class="bb-custom-icon bb-custom-icon-arrow-left">Previous</a>
+       <a id="bb-nav-next" href="#" class="bb-custom-icon bb-custom-icon-arrow-right">Next</a>
+       <a id="bb-nav-last" href="#" class="bb-custom-icon bb-custom-icon-last">Last page</a>
+     </nav>
+
+   </div>
+
+ </div>/container
+</div> -->
+
+<!-- <section class="subscribe-section" id="subscribe">
+<div class="form-subcribe">
+<div class="container">
+<div class="subcribe-form-view">
+  <div class="title-subcribe">
+      <strong>SUBSCRIBE NOW</strong>
+      <span class="subcribe-message">FOR COUPONS, NEWSLETTERS, AND MORE!</span>
+  </div>
+  <div class="book-form form-subcribe-view">
+      <form action="#" id="bookstore-subcribe" class="bebostore-subcribe">
+          <i class="mail-subcribe"></i>
+          <input class="txt-subcrible-text" type="text" name="email-subcribe" value="" placeholder="Enter your email address">
+          <input class="book-button book-button-active" type="submit" name="btn-submit" value="sign up">
+      </form>
+  </div>
+</div>
+</div>
+</div>
+</section> -->
+
+<section class="vc_row row vc_row-fluid vc_custom_1441880891630">
+<div class="wpb_column vc_column_container s12">
+<div class="vc_column-inner ">
+<div class="wpb_wrapper">
+<div class="form-subcribe">
+<div class="container">
+<div class="subcribe-form-view">
+    <div class="title-subcribe">
+        <strong>SUBSCRIBE NOW</strong>
+        <span class="subcribe-message">FOR COUPONS, NEWSLETTERS, AND MORE!</span>
+    </div>
+    <div class="book-form form-subcribe-view">
+        <form action="#" id="bookstore-subcribe" class="bebostore-subcribe">
+            <i class="mail-subcribe"></i>
+            <input class="txt-subcrible-text" type="text" name="email-subcribe" value="" placeholder="Enter your email address">
+            <input class="book-button book-button-active" type="submit" name="btn-submit" value="sign up">
+        </form>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<footer class="">
+<div class="top-footer">
+<div class="container">
+<div class="row">
+<div class="col l3 m3 s12">
+<div class="footer-widget">
+<div class="title-box widget-title"><span>BEBO</span></div>
+<div class="widget-body">beaucreative@.com</br>
+001 (407) 901-6400</br>
+Made in NYC
+<div class="widget-footer">
+  <ul class="list-social">
+      <li><a href="http://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="http://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="http://plus.google.com" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+      <li><a href="http://pinterest.com" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+      <li><a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+  </ul>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col l3 m3 s12">
+<div class="footer-widget">
+<div class="title-box widget-title"><span>Find</span></div>
+<div class="widget-body">
+<div class="menu-find-container">
+  <ul id="menu-find" class="menu">
+      <li id="menu-item-1550" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1550"><a href="#">Columns</a></li>
+      <li id="menu-item-1551" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1551"><a href="#">Recipes</a></li>
+      <li id="menu-item-1552" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1552"><a href="#">Contests</a></li>
+      <li id="menu-item-1553" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1553"><a href="#">Hotline</a></li>
+      <li id="menu-item-1554" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1554"><a href="#">Shop</a></li>
+      <li id="menu-item-1555" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1555"><a href="#">The Piglet</a></li>
+      <li id="menu-item-1556" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1556"><a href="#">Sitemap</a></li>
+  </ul>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col l3 m3 s12">
+<div class="footer-widget">
+<div class="title-box widget-title"><span>Shop</span></div>
+<div class="widget-body">
+<div class="menu-shop-container">
+  <ul id="menu-shop" class="menu">
+      <li id="menu-item-1557" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1557"><a href="#">My Orders</a></li>
+      <li id="menu-item-1558" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1558"><a href="#">Shop Collections</a></li>
+      <li id="menu-item-1559" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1559"><a href="#">Gift Cards</a></li>
+      <li id="menu-item-1560" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1560"><a href="#">Get Help</a></li>
+      <li id="menu-item-1561" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1561"><a href="#">FAQ</a></li>
+      <li id="menu-item-1562" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1562"><a href="#">Refer Friends, Get $20</a></li>
+      <li id="menu-item-1563" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1563"><a href="#">Affiliate Program</a></li>
+  </ul>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col l3 m3 s12">
+<div class="footer-widget">
+<div class="title-box widget-title"><span>hottest week</span></div>
+<div class="widget-body"><span></span>
+<div class="book-item ">
+  <div class="book-image"><img width="375" height="570" src="http://bookstore.beautheme.com/wp-content/uploads/2016/06/16.jpg" class="attachment-post-thumbnail wp-post-image" alt="16" /></div>
+  <div class="book-actions">
+      <div class="list-action">
+          <span class="book-addtocart">
+<a href="/?add-to-cart=773" rel="nofollow" data-product_id="773" class="button add_to_cart_button product_type_simple added"></a>
+</span>
+          <div class="yith-wcwl-add-to-wishlist add-to-wishlist-773">
+              <div class="yith-wcwl-add-button show" style="display:block">
+                  <a href="/home-children/?add_to_wishlist=773" rel="nofollow" data-product-id="773" data-product-type="variable" class="add_to_wishlist">Add to Wishlist</a>
+                  <img src="http://bookstore.beautheme.com/wp-content/plugins/plg-bebo-store/includes/thirdparty/yith-woocommerce-wishlist/assets/images/wpspin_light.gif" class="ajax-loading" alt="loading" width="16" height="16" style="visibility:hidden" />
+              </div>
+              <div class="yith-wcwl-wishlistaddedbrowse hide" style="display:none;">
+                  <span class="feedback">Product added!</span>
+                  <a href="http://bookstore.beautheme.com/wishlist/view/" rel="nofollow">Browse Wishlist </a>
+              </div>
+              <div class="yith-wcwl-wishlistexistsbrowse hide" style="display:none">
+                  <span class="feedback">The product is already in the wishlist!</span>
+                  <a href="http://bookstore.beautheme.com/wishlist/view/" rel="nofollow">Browse Wishlist </a>
+              </div>
+              <div style="clear:both"></div>
+              <div class="yith-wcwl-wishlistaddresponse"></div>
+          </div>
+          <div class="clear"></div>
+      </div>
+  </div>
+</div>
+<div class="book-info">
+  <span class="book-name"><a href="http://bookstore.beautheme.com/product/blood-magick/">Blood Magick</a></span>
+  <span class="book-rate woocommerce">
+<span class="star-rating">
+<span style="width:100%">
+<strong class="rating">5</strong> 6
+<span class="rating">1</span>
+  </span>
+  </span>
+  </span>
+  <span class="book-price"><b>&#36;&nbsp;15</b></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bottom-footer">
+<div class="container">
+<div class="payment">
+<a href="#"><img src="http://bookstore.beautheme.com/wp-content/themes/bebostore/asset/images/mastercard.png" alt="Payment method"></a>
+<a href="#"><img src="http://bookstore.beautheme.com/wp-content/themes/bebostore/asset/images/paypal.png" alt="Payment method"></a>
+<a href="#"><img src="http://bookstore.beautheme.com/wp-content/themes/bebostore/asset/images/visa.png" alt="Payment method"></a>
+<a href="#"><img src="http://bookstore.beautheme.com/wp-content/themes/bebostore/asset/images/dhl.png" alt="Payment method"></a>
+<a href="#"><img src="http://bookstore.beautheme.com/wp-content/themes/bebostore/asset/images/american-express.png" alt="Payment method"></a>
+<a href="#"><img src="http://bookstore.beautheme.com/wp-content/themes/bebostore/asset/images/fedex.png" alt="Payment method"></a>
+</div>
+<div class="copyright">
+<span class="text-copyright">Copyright © 2009-2015  Beautheme. All Rights Reserved.</span>
+</div>
+</div>
+</div>
+</footer>
+<div id="beau-go-top">
+<i class="fa fa-angle-up"></i>
+</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/jquerypp.custom.js"></script>
+    <script src="js/jquery.bookblock.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
